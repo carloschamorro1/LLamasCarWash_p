@@ -26,7 +26,7 @@ public class GestionClientes {
         datos.setPrimerApellido(lt.leerString("Por favor ingrese el primer apellido"));
         datos.setCodigoCliente(lt.leerString("Por favor ingrese el codigo del cliennte"));
         clientes.add(new Cliente(datos.getIdentidad(),datos.getPrimerNombre(),datos.getPrimerApellido(), datos.getCodigoCliente()));
-        EscritorCvsCliente.writeCsvFile("Clientes.csv",clientes,true);
+        EscritorCvsCliente.writeCsvFile("Clientes.csv",clientes,false);
         return clientes;
     }
 
