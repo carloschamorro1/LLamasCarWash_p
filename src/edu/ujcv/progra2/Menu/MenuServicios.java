@@ -33,6 +33,7 @@ public class MenuServicios {
                 break;
             case 6:
                 System.out.println("Has regresado al menu principal");
+                break;
         }
     }
 
