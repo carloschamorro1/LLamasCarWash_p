@@ -11,7 +11,8 @@ public class MenuServicios {
         System.out.println("3.............. Servicio 3");
         System.out.println("4.............. Servicio 4");
         System.out.println("5.............. Servicio 5");
-        System.out.println("6.............. Salir");
+        System.out.println("6.............. Facturar");
+        System.out.println("7.............. Salir");
     }
 
     public int leerOpciones() {
@@ -32,6 +33,8 @@ public class MenuServicios {
             case 5:
                 break;
             case 6:
+                break;
+            case 7:
                 System.out.println("Has regresado al menu principal");
                 break;
         }
