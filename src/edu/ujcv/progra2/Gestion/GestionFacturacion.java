@@ -17,15 +17,17 @@ public class GestionFacturacion {
     ArrayList<Facturas> cantidad = new ArrayList<>();
     Facturas servicio = new Facturas();
     Reportes rep = new Reportes();
-    double subtotal = 0;
+    public double subtotal2 = 0;
+    public double subtotal = 0;
+    public String servicio1 = "";
     public double total = 0;
     double isv = 0;
     public void facturar(){
         LectorTeclado lt = new LectorTeclado();
         Scanner sc = new Scanner(System.in);
         int op;
-        isv = subtotal *0.15;
-        subtotal = subtotal - isv;
+        isv = subtotal2 *0.15;
+        subtotal = subtotal2 - isv;
         total = subtotal + isv;
         rep.setTotal(String.valueOf(total));
         System.out.println("¿Desea la factura con nombre y RTN?");
@@ -59,8 +61,10 @@ public class GestionFacturacion {
         System.out.println("\t \t \t \t \t FACTURA ORIGINAL");
         System.out.println("\t \t   CAI: 2H6P98-78J45O-47GH21-21WE63-03S4DF-32");
         System.out.println("\t \t \t \t \t Lo atendio: Carlos \n \n ");
+
         rep.setCantidadProductos(String.valueOf(cantidad.size()));
-        System.out.println(servicio.getServicio() + "\t \t \t \t \t \t \t \t \t \t \t" + servicio.getPrecio() + "G");
+        System.out.println(servicio1 + "\t \t \t \t \t \t \t \t \t \t \t" + subtotal2 + "G");
+
         System.out.println("Subtotal 15% \t \t \t \t \t \t \t \t  L." + String.format("%.2f", subtotal));
         System.out.println("15% ISV \t \t \t \t \t \t \t \t \t \t " + String.format("%.2f", isv));
         System.out.println("Total \t \t \t \t \t \t \t \t \t \t \t L." + String.format("%.2f", total));

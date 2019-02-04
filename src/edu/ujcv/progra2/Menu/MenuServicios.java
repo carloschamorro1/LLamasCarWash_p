@@ -28,8 +28,8 @@ public class MenuServicios {
     public void procesarOpcion(int opcion) {
         switch (opcion) {
             case 1:
-                this.servicio.setServicio("Lavado de Vehiculo");
-                this.servicio.setPrecio("90");
+                gestionFacturacion.subtotal2 = 90;
+                gestionFacturacion.servicio1 = "Lavado de Vehiculo";
                 gestionFacturacion.facturar();
                 break;
             case 2:
