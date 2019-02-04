@@ -10,7 +10,6 @@ import java.util.Scanner;
             init(sc);
         }
 
-
         private void init(Scanner sc) {
             mSc = sc;
         }
