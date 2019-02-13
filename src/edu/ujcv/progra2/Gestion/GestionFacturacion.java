@@ -43,12 +43,12 @@ public class GestionFacturacion {
             }
         }while(op != 1 && op !=2);
         System.out.println("\n \t \t \t \t \t \t  FACTURA \n \t \t \t \t \t \t  ======= \n");
-        System.out.println("\t \t \t \t \t Mercadito Torres");
+        System.out.println("\t \t \t \t \t \t Carwash FUERA JOH");
         System.out.println("\t \t \t \t \t RTN: 08019878659894");
         System.out.println("\t \t \t Centro Comercial Portal de Viera");
         System.out.println("\t \t \t Carretera al Hatillo, Tegucigalpa");
         System.out.println("\t \t \t \t \t Tel: +504 2248-6974");
-        System.out.println("\t \t \t Correo: mercadito_torres@gmail.com");
+        System.out.println("\t \t \t Correo: carwash_FUERAJOH@gmail.com");
         DateFormat hourdateFormat = new SimpleDateFormat("hh:mm:ss a dd/MM/yyyy");
         Date date = new Date();
         System.out.println("\t \t \t \t \t" + hourdateFormat.format(date));
